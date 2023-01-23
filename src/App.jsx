@@ -1,18 +1,15 @@
 // Imports
-
-import "./styles/index.css";
-import "./styles/App.css";
-import Header from "./components/Header";
+import Intro from "./components/Intro";
+import MainContent from "./components/MainContent";
 import NavigationBar from "./components/Nav";
 
 function App() {
   return (
-    <div>
+    <>
+      <Intro />
       <NavigationBar />
-      <Header />
-
-      <p>PortfolioKim</p>
-    </div>
+      <MainContent />
+    </>
   );
 }
 
