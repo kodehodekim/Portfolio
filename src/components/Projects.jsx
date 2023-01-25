@@ -3,7 +3,7 @@
 function ProjectList() {
   return (
     <>
-      <div id="projectList">
+      <div id="projects" className="projectList">
         <h2>Projects</h2>
         <li>
           <ul>Project1</ul>

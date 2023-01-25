@@ -1,14 +1,14 @@
 // Imports
-import Intro from "./components/Intro";
+import Footer from "./components/Footer";
 import MainContent from "./components/MainContent";
 import NavigationBar from "./components/Nav";
 
 function App() {
   return (
     <>
-      <Intro />
       <NavigationBar />
       <MainContent />
+      <Footer />
     </>
   );
 }
