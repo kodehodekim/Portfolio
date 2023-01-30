@@ -27,22 +27,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
-#gridtest {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
+#gridContainer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.7fr 2fr 0.7fr 0.6fr;
+  grid-template-rows: 1.8fr 0.2fr;
+  gap: 0px 0px;
+  align-content: stretch;
 }
 
 .navContainer,
 .footerContainer,
 .mainContainer {
   margin: 0;
-  /* place-self: stretch; */
 }
 
 .navContainer {
@@ -52,13 +51,14 @@ body {
 
   min-width: 75px;
   max-width: 100px;
+
+  grid-area: 2 / 3;
 }
 
 .mainContainer {
   opacity: 80%;
   background-color: blue;
-  /* flex-direction: column;
-  justify-content: left; */
+  grid-area: 2 / 2;
 
   width: 900px;
   max-width: 100%;
@@ -68,9 +68,7 @@ body {
 .footerContainer {
   background-color: orange;
   opacity: 90%;
-  /* justify-content: center;
-  flex: 1;
-  align-items: center; */
+  grid-area: 3 / 2;
 
   min-width: 320px;
   max-width: 600px;
