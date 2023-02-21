@@ -7,19 +7,10 @@ import "./index.css";
 function App() {
   return (
     <>
-      <div id="gridContainer">
+      <div id="gridContainer" className="h-screen w-screen grid">
         <NavigationBar />
         <MainContent />
         <Footer />
-        {/* <div id="navComponent">
-          <NavigationBar />
-        </div>
-        <div id="mainComponent">
-          <MainContent />
-        </div>
-        <div id="footerComponent">
-          <Footer />
-        </div> */}
       </div>
     </>
   );

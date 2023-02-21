@@ -17,12 +17,6 @@ html {
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  width: 100vw;
-  height: 100vh;
-  /* justify-content: center; */
-
   background-image: url(./assets/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,46 +24,18 @@ body {
 }
 
 #gridContainer {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 0.7fr 2fr 0.7fr 0.6fr;
-  grid-template-rows: 1.8fr 0.2fr;
-  gap: 0px 0px;
-  align-content: stretch;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 25% auto 10%;
 }
 
-.navContainer,
-.footerContainer,
 .mainContainer {
-  margin: 0;
+  grid-area: 2 / 2;
 }
 
-.navContainer {
-  background: green;
-  opacity: 90%;
-  /* justify-content: left; */
-
-  min-width: 75px;
-  max-width: 100px;
-
+#navigationContainer {
   grid-area: 2 / 3;
 }
 
-.mainContainer {
-  opacity: 80%;
-  background-color: blue;
-  grid-area: 2 / 2;
-
-  width: 900px;
-  max-width: 100%;
-  min-width: 320px;
-}
-
-.footerContainer {
-  background-color: orange;
-  opacity: 90%;
+#footer {
   grid-area: 3 / 2;
-
-  min-width: 320px;
-  max-width: 600px;
 }
