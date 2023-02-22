@@ -14,8 +14,8 @@ function NavigationBar() {
       >
         <div className="underline font-bold ">
           <h3>Home</h3>
+          <h3>About</h3>
           <h3>Projects</h3>
-          <h3>Info</h3>
           <h3>Contact</h3>
         </div>
         <div id="navIcons" className="ml-4">

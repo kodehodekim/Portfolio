@@ -1,12 +1,47 @@
-// Nav Bar items
+// Nav projects menu items
 
-function NavItems() {
-  return (
-    <div>
-      <li>Item1</li>
-      <li>Item2</li>
-      <li>Item3</li>
-      <li>Item4</li>
-    </div>
-  );
-}
+const MenuItems = [
+  {
+    project: "Pokedex",
+    url: "/pokedex",
+    ghPages: "",
+    name: "Pokedex Project",
+    imgUrl: "../assets/img/projects/pokedex.png",
+    description:
+      "Task during the Kodehode course. Fetching data from an API, then displaying the API data using Javascript.",
+    gitHub:
+      "https://github.com/kodehodekim/ModulCRepo/tree/main/Javascript/Dev/Assignment3%20Pokedex",
+  },
+  {
+    project: "ChristmasCountdown",
+    url: "/ChristmasProject",
+    ghPages: "",
+    name: "Countdown to Christmas",
+    imgUrl: "../assets/img/projects/christmas.png",
+    description:
+      "Task done during the Kodehode coding course. Made in React, using useEffect and useState to calculate the timer until christmas is here.",
+    gitHub: "https://github.com/kodehodekim/ChristmasProject",
+  },
+  {
+    project: "Autumn Project",
+    url: "/AutumnProject",
+    ghPages: "https://kodehodekim.github.io/Autumnproject/",
+    name: "Autumn Project",
+    imgUrl: "../assets/img/projects/AutumnProject.png",
+    description:
+      "My first collab project with two other attendants on the Kodehode Coding course. Showing information about the planets, and dwarf planets in our galaxy. Using mostly HTML, CSS and some Javascript for animations in the parallax, aswell as button functionality.",
+    gitHub: "https://github.com/kodehodekim/Autumnproject",
+  },
+  {
+    project: "Portfolio",
+    url: "/Portfolio",
+    ghPages: "https://kodehodekim.github.io/Portfolio/",
+    name: "Autumn Project",
+    imgUrl: "../assets/img/projects/AutumnProject.png",
+    description:
+      "My first collab project with two other attendants on the Kodehode Coding course. Showing information about the planets, and dwarf planets in our galaxy. Using mostly HTML, CSS and some Javascript for animations in the parallax, aswell as button functionality.",
+    gitHub: "https://github.com/kodehodekim/Autumnproject",
+  },
+];
+
+export default MenuItems;
