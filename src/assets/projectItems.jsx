@@ -1,6 +1,6 @@
 // Nav projects menu items
 
-const MenuItems = [
+const projectItems = [
   {
     project: "Pokedex",
     url: "/pokedex",
@@ -36,12 +36,12 @@ const MenuItems = [
     project: "Portfolio",
     url: "/Portfolio",
     ghPages: "https://kodehodekim.github.io/Portfolio/",
-    name: "Autumn Project",
-    imgUrl: "../assets/img/projects/AutumnProject.png",
+    name: "Portfolio",
+    imgUrl: "../assets/img/projects/Portfolio.png",
     description:
-      "My first collab project with two other attendants on the Kodehode Coding course. Showing information about the planets, and dwarf planets in our galaxy. Using mostly HTML, CSS and some Javascript for animations in the parallax, aswell as button functionality.",
+      "My Portfolio, made using React, Vite and Tailwind. I tried to use the least amount of css, and rather use Tailwind and React to do the styling and functionality.",
     gitHub: "https://github.com/kodehodekim/Autumnproject",
   },
 ];
 
-export default MenuItems;
+export default projectItems;

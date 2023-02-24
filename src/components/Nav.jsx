@@ -2,6 +2,7 @@
 
 import gmailColored from "../assets/icons/gmailColored.png";
 import githubColored from "../assets/icons/githubColored.png";
+// import projectItems from "../assets/projectItems";
 
 import "../index.css";
 
