@@ -39,3 +39,12 @@ body {
 #footer {
   grid-area: 3 / 2;
 }
+
+/* NAVIGATION */
+
+.dropdown-menu {
+  left: auto;
+  right: auto;
+  top: 31%;
+  transform: translateX(-105%);
+}
