@@ -10,6 +10,7 @@ import figmaColored from "../assets/icons/figmaColored.png";
 function Footer() {
   return (
     <>
+      {/* Footer icons need changed, as these are to large. */}
       <footer
         id="footer"
         className="text-xs font-thin text-center max-w-xs items-center justify-self-center"

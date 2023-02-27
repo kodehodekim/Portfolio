@@ -40,7 +40,8 @@ body {
   grid-area: 3 / 2;
 }
 
-/* NAVIGATION */
+/* NAVIGATION STILL WORKING ON IT
+   Will be removed and changed into Tailwind when its working as intended.*/
 
 .dropdown-menu {
   left: auto;

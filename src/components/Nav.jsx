@@ -1,15 +1,16 @@
 // Navbar component
 
+// Imports
 import gmailColored from "../assets/icons/gmailColored.png";
 import githubColored from "../assets/icons/githubColored.png";
 import React, { useState } from "react";
-// import projectItems from "../assets/projectItems";
-
 import "../index.css";
 
+// Component
+
 function NavigationBar() {
+  // Using useState to set the project list as open, and generating the list of projects on an onclick.
   const [isOpen, setIsOpen] = useState(false);
-  const [modal, setModal] = useState(false);
 
   function toggleDropDown() {
     setIsOpen(!isOpen);
@@ -35,6 +36,8 @@ function NavigationBar() {
           <li onClick={toggleDropDown}>
             <a href="#projects">Projects</a>
           </li>
+          {/* This is the Menu that's opened when the state changes to true, with a list of the projects I want to show.
+              It's not finished, as I want the projects to open in a modal using Hashrouter(BrowseRouter when I dont host it on GH-pages) */}
           {isOpen && (
             <div className="dropdown-menu bg-gray-500 bg-opacity-30 rounded-2xl absolute underline font-bold text-sm text-right p-2">
               <ul className="list-none">
@@ -66,6 +69,7 @@ function NavigationBar() {
           </li>
         </ul>
       </div>
+      {/* Icons to the right of the Navigation */}
       <div id="navIcons" className="ml-4">
         <a href="mailto:kim.kodehode@gmail.com">
           <img src={gmailColored} alt="Gmail icon" />

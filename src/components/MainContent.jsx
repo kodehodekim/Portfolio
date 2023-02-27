@@ -3,6 +3,7 @@
 function MainContent() {
   return (
     <>
+      {/* Home content, short intro */}
       <div id="main" className="mainContainer justify-self-start">
         <div
           id="intro"
