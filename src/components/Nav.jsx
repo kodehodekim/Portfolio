@@ -1,10 +1,13 @@
 // Navbar component
 
 // Imports
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../index.css";
+
+//Icons imported
 import gmailColored from "../assets/icons/gmailColored.png";
 import githubColored from "../assets/icons/githubColored.png";
-import React, { useState } from "react";
-import "../index.css";
 
 // Component
 
@@ -28,23 +31,27 @@ function NavigationBar() {
       <div className="underline font-bold ">
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <Link to="/#">
+              <a onClick={closeDropDown}>Home</a>
+            </Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link to="/About">
+              <a onClick={closeDropDown}>About</a>
+            </Link>
           </li>
           <li onClick={toggleDropDown}>
-            <a href="#projects">Projects</a>
+            <a>Projects</a>
           </li>
           {/* This is the Menu that's opened when the state changes to true, with a list of the projects I want to show.
               It's not finished, as I want the projects to open in a modal using Hashrouter(BrowseRouter when I dont host it on GH-pages) */}
           {isOpen && (
-            <div className="dropdown-menu bg-gray-500 bg-opacity-30 rounded-2xl absolute underline font-bold text-sm text-right p-2">
+            <div className="dropdown bg-gray-500 bg-opacity-30 rounded-2xl absolute underline font-bold text-xs text-right p-2">
               <ul className="list-none">
                 <li>
-                  <a href="#project1" onClick={closeDropDown}>
-                    Pokedex
-                  </a>
+                  <Link to="/project1">
+                    <a onClick={closeDropDown}>Pokedex</a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#project2" onClick={closeDropDown}>
@@ -65,7 +72,9 @@ function NavigationBar() {
             </div>
           )}
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/Contact">
+              <a href="#contact">Contact</a>
+            </Link>
           </li>
         </ul>
       </div>
