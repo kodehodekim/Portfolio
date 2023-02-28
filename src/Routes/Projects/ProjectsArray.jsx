@@ -1,6 +1,16 @@
 // Nav projects menu items
 
+// Icons for the projects
+// import IconReact from "../assets/icons/react.png";
+// import IconFigma from "../assets/icons/figma.png";
+// import IconJs from "../assets/icons/js.png";
+// import IconHtml from "../assets/icons/html.png";
+// import IconCss from "../assets/icons/css.png";
+// import IconVite from "../assets/icons/vite.svg";
+
+// Preview of the projects
 import projectImage1 from "./ProjectPreview/pokedex.png";
+import projectImage2 from "./ProjectPreview/christmas.png";
 
 export const project1 = [
   {
@@ -11,20 +21,24 @@ export const project1 = [
       "Task during the Kodehode course. Fetching data from an API, then displaying the API data using Javascript.",
     git: "https://github.com/kodehodekim/ModulCRepo/tree/main/Javascript/Dev/Assignment3%20Pokedex",
     ghpages: "https://kodehodekim.github.io/Pokedex/",
+    // icons: IconReact,
+    // IconFigma,
+    // IconCss,
+    // IconVite,
+    // IconJs,
   },
 ];
 
-// export const project2 = [
-//   {
-//     project: "ChristmasCountdown",
-//     name: "Countdown to Christmas",
-//     img: "../assets/img/projects/christmas.png",
-//     description:
-//       "Task done during the Kodehode coding course. Made in React, using useEffect and useState to calculate the timer until christmas is here.",
-//     gitHub: "https://github.com/kodehodekim/ChristmasProject",
-//     ghPages: "https://kodehodekim.github.io/ChristmasProject/",
-//   },
-// ];
+export const project2 = [
+  {
+    name: "Countdown to Christmas",
+    image: projectImage2,
+    description:
+      "Task done during the Kodehode coding course. Made in React, useEffect and useState is used to calculate the timer until christmas. Using localStorage for the guestbook.",
+    gitHub: "https://github.com/kodehodekim/ChristmasProject",
+    ghPages: "https://kodehodekim.github.io/ChristmasProject/",
+  },
+];
 
 // export const project3 = [
 //   {

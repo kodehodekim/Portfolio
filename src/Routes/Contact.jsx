@@ -2,29 +2,29 @@
 
 function Contact() {
   return (
-    <>
-      {/* Contact information */}
-      <div id="main" className="mainContainer justify-self-start">
-        <div
-          id="contact"
-          className="text-left bg-gray-500 rounded-2xl p-2 mb-6 max-w-md bg-opacity-80"
-        >
-          <h3 className="text-xs">Here you can find</h3>
-          <h1 className="text-4xl">Contact info</h1>
-        </div>
-        <div
-          id="content"
-          className="text-left bg-gray-500 rounded-2xl p-2 text-sm font-light max-w-xl  bg-opacity-80"
-        >
-          <p>
-            aboutme <br /> Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Omnis commodi vitae amet esse, dignissimos eum provident quasi
-            illum aliquid minima sunt mollitia, architecto expedita dolorem fuga
-            autem odit possimus laborum.
-          </p>
-        </div>
+    <div id="about" className="mainContainer justify-self-center">
+      <div
+        id="about"
+        className="text-left bg-gray-800 bg-opacity-70 rounded-2xl p-2 mb-2 object-center"
+      >
+        <h3 className="text-xs">How to get in</h3>
+        <h1 className="text-5xl">Contact</h1>
       </div>
-    </>
+      <div
+        id="content"
+        className="text-center bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light max-w-xl"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          repellendus!
+        </p>
+        <br />
+        <p>e-mail link</p>
+        <p>github link</p>
+        <p>discord link</p>
+        <br />
+      </div>
+    </div>
   );
 }
 

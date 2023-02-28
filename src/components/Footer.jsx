@@ -1,11 +1,11 @@
 // Fooooter component
 
 // Importing Icons
-import reactColored from "../assets/icons/reactColored.png";
-import javascriptColored from "../assets/icons/javascriptColored.png";
-import html5Colored from "../assets/icons/html5Colored.png";
-import cssColored from "../assets/icons/cssColored.png";
-import figmaColored from "../assets/icons/figmaColored.png";
+import IconReact from "../assets/icons/react.png";
+import IconFigma from "../assets/icons/figma.png";
+import IconJs from "../assets/icons/js.png";
+import IconHtml from "../assets/icons/html.png";
+import IconCss from "../assets/icons/css.png";
 
 function Footer() {
   return (
@@ -16,27 +16,24 @@ function Footer() {
         className="text-xs font-thin text-center max-w-xs items-center justify-self-center"
       >
         <div>
-          <div id="footerIcons" className="inline-flex">
+          <div id="footerIcons" className="inline-flex opacity-30">
             <a href="https://reactjs.org/">
-              <img src={reactColored} alt="React icon" />
+              <img src={IconReact} alt="React icon" />
             </a>
-            <a className="-mt-1.5 -ml-2" href="https://www.javascript.com/">
-              <img src={javascriptColored} alt="Javascript icon" />
+            <a href="https://www.javascript.com/">
+              <img src={IconJs} alt="Javascript icon" />
             </a>
-            <a
-              className="-ml-2"
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-            >
-              <img src={html5Colored} alt="HTML5 icon" />
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+              <img src={IconHtml} alt="HTML5 icon" />
             </a>
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-              <img src={cssColored} alt="CSS3 icon" />
+              <img src={IconCss} alt="CSS3 icon" />
             </a>
-            <a className="ml-0.5" href="https://www.figma.com/">
-              <img src={figmaColored} alt="Figma icon" />
+            <a href="https://www.figma.com/">
+              <img src={IconFigma} alt="Figma icon" />
             </a>
           </div>
-          <h4 id="footerText" className="-mt-2">
+          <h4 id="footerText" className="opacity-40 text-xs">
             NifsWeb development 2023
           </h4>
         </div>

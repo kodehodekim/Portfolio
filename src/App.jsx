@@ -7,6 +7,7 @@ import NavigationBar from "./components/Nav";
 import About from "./Routes/About";
 import Contact from "./Routes/Contact";
 import ProjectOne from "./Routes/Projects/Project1";
+import ProjectTwo from "./Routes/Projects/Project2";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Project1" element={<ProjectOne />} />
+          <Route path="/Project2" element={<ProjectTwo />} />
           <Route
             path="/Error"
             element={
