@@ -26,14 +26,14 @@ function ProjectOne() {
               <p className="text-sm">{project.description}</p>
               <div
                 id="projectLinks"
-                className="flex justify-center space-x-8 mt-4"
+                className="flex justify-center space-x-8 mt-4 text-sm underline underline-offset-4"
               >
                 <p></p>
                 <a href={project.git}>
                   <h4>Github</h4>
                 </a>
                 <a href={project.ghpages}>
-                  <h4>Live version</h4>
+                  <h5>Live version</h5>
                 </a>
               </div>
             </div>
