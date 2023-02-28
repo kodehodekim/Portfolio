@@ -4,15 +4,15 @@ function MainContent() {
   return (
     <>
       {/* Home content, short intro */}
-      <div id="main" className="mainContainer justify-self-start">
+      <div id="main" className="mainContainer justify-self-center">
         <div
           id="intro"
-          className="text-left bg-gray-500 rounded-2xl p-4 mb-6 w-max  max-w-md bg-opacity-80"
+          className="text-left bg-gray-500 rounded-2xl p-2 mb-6 max-w-xs bg-opacity-80"
         >
           <h3 className="text-xs">Hi my name is</h3>
           <h1 className="text-4xl">Kim Jensen</h1>
-          <h5 className="text-xs">
-            I build, design and develope things for the internet
+          <h5 className="text-xs text-right">
+            I build, design and develope things.
           </h5>
         </div>
         <div

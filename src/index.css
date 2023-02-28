@@ -53,3 +53,17 @@ body {
   top: 31%;
   transform: translateX(-105%);
 }
+
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  text-shadow: 1px 1px 2px black;
+}
+
+li:hover {
+  color: rgba(236, 48, 48, 0.87);
+}

@@ -26,27 +26,29 @@ function NavigationBar() {
   return (
     <nav
       id="navigationContainer"
-      className=".w-1/4 flex flex-row justify-self-start -ml-20 z-1"
+      className=".w-1/4 flex flex-row justify-self-end mr-10 z-1"
     >
-      <div className="underline font-bold ">
+      <div className="underline font-bold text-lg ">
         <ul>
           <li>
             <Link to="/#">
-              <a onClick={closeDropDown}>Home</a>
+              <a onMouseEnter={closeDropDown}>Home</a>
             </Link>
           </li>
           <li>
             <Link to="/About">
-              <a onClick={closeDropDown}>About</a>
+              <a onMouseEnter={closeDropDown}>About</a>
             </Link>
           </li>
-          <li onClick={toggleDropDown}>
-            <a>Projects</a>
+          <li>
+            <Link to="/#">
+              <a onMouseEnter={toggleDropDown}>Projects</a>
+            </Link>
           </li>
           {/* This is the Menu that's opened when the state changes to true, with a list of the projects I want to show.
               It's not finished, as I want the projects to open in a modal using Hashrouter(BrowseRouter when I dont host it on GH-pages) */}
           {isOpen && (
-            <div className="dropdown bg-gray-500 bg-opacity-30 rounded-2xl absolute underline font-bold text-xs text-right p-2">
+            <div className="dropdown bg-gray-500 bg-opacity-90 rounded-2xl absolute underline font-bold text-sm text-right p-2 box-content w-24 ">
               <ul className="list-none">
                 <li>
                   <Link to="/project1">
@@ -55,7 +57,7 @@ function NavigationBar() {
                 </li>
                 <li>
                   <a href="#project2" onClick={closeDropDown}>
-                    Christmas Countdown
+                    Christmas-Countdown
                   </a>
                 </li>
                 <li>
@@ -73,13 +75,13 @@ function NavigationBar() {
           )}
           <li>
             <Link to="/Contact">
-              <a href="#contact">Contact</a>
+              <a onMouseEnter={closeDropDown}>Contact</a>
             </Link>
           </li>
         </ul>
       </div>
       {/* Icons to the right of the Navigation */}
-      <div id="navIcons" className="ml-4">
+      <div id="navIcons" className="ml-1">
         <a href="mailto:kim.kodehode@gmail.com">
           <img src={gmailColored} alt="Gmail icon" />
         </a>
