@@ -1,11 +1,11 @@
 // Nav projects menu items
 
-// import project1Img from "./ProjectPreview/pokedex.png";
+import projectImage1 from "./ProjectPreview/pokedex.png";
 
 export const project1 = [
   {
     name: "Pokedex Gen 1",
-    image: "/assets/pokedex.png",
+    image: projectImage1,
     imageAlt: "Preview image of the pokedex",
     description:
       "Task during the Kodehode course. Fetching data from an API, then displaying the API data using Javascript.",

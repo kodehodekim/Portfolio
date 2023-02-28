@@ -14,12 +14,14 @@ function ProjectOne() {
         <div>
           {project1.map((project) => (
             <div key={project.id}>
-              <img
-                id="projectImage"
-                className="flex justify-center"
-                src={project.image}
-                alt={project.imageAlt}
-              />
+              <div className="flex justify-center mt-1">
+                <img
+                  className="rounded-xl"
+                  id="projectImage"
+                  src={project.image}
+                  alt={project.imageAlt}
+                />
+              </div>
               <h2 className="text-center mb-4 underline-offset-4 underline text-lg">
                 {project.name}
               </h2>
