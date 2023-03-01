@@ -10,7 +10,7 @@ function ProjectTwo() {
         <h3 className="text-xs">Project:</h3>
         <h1 className="text-5xl">Pokedex</h1>
       </div>
-      <div className="text-left bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light max-w-xl">
+      <div className="text-left bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light max-w-max">
         <div>
           {project2.map((project) => (
             <div key={project.id}>

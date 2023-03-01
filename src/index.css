@@ -23,13 +23,13 @@ body {
 }
 
 #gridContainer {
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 20% 60% 20%;
   grid-template-rows: 25% auto 10%;
 }
 
 .mainContainer {
   grid-area: 1 / 2;
-  margin-top: 5rem;
+  margin-top: 5vh;
 }
 
 #navigationContainer {
@@ -71,4 +71,45 @@ p {
 
 li:hover {
   color: rgba(236, 48, 48, 0.87);
+}
+
+@media only screen and (max-device-width: 667px) and (orientation: portrait) {
+  .hiddenMobile {
+    display: none;
+  }
+
+  #gridContainer {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 25% auto 10%;
+  }
+
+  #navigationContainer {
+    margin-top: -3vh;
+    font-weight: 800;
+    width: 100vw;
+    grid-area: 3 / 1;
+    margin: 0;
+  }
+
+  #navigationContainer li {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-decoration-line: none;
+    grid-area: 2 / 2;
+    font-size: 1.5rem;
+    padding: 4px;
+    font-weight: 800;
+    line-height: 4rem;
+  }
+
+  .dropdown {
+    z-index: 1;
+    background-color: #242424;
+  }
+
+  li:active {
+    color: rgba(236, 48, 48, 0.87);
+    text-decoration-line: line-through;
+  }
 }

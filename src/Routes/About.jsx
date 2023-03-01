@@ -1,7 +1,7 @@
 // About modal
 function About() {
   return (
-    <div id="main" className="mainContainer justify-self-center">
+    <div id="main" className="mainContainer justify-self-center max-w-max">
       <div
         id="intro"
         className="text-left bg-gray-800 bg-opacity-70 rounded-2xl p-2 mb-2 object-center"
@@ -11,7 +11,7 @@ function About() {
       </div>
       <div
         id="content"
-        className="text-center bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light max-w-xl"
+        className="text-center bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light mt-16"
       >
         <p>
           I'm a little teapot, short and stout. This is my handle, this is

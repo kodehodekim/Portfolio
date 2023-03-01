@@ -8,6 +8,9 @@ import About from "./Routes/About";
 import Contact from "./Routes/Contact";
 import ProjectOne from "./Routes/Projects/Project1";
 import ProjectTwo from "./Routes/Projects/Project2";
+// import ProjectThree from "./Routes/Projects/Project3";
+// import ProjectFour from "./Routes/Projects/Project4";
+// import ProjectFive from "./Routes/Projects/Project5";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Project1" element={<ProjectOne />} />
           <Route path="/Project2" element={<ProjectTwo />} />
+          {/* <Route path="/Project2" element={<ProjectThree />} />
+          <Route path="/Project2" element={<ProjectFour />} />
+          <Route path="/Project2" element={<ProjectFive />} /> */}
           <Route
             path="/Error"
             element={

@@ -12,7 +12,7 @@ function Contact() {
       </div>
       <div
         id="content"
-        className="text-center bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light max-w-xl"
+        className="text-center bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light max-w-max"
       >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,

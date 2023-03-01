@@ -2,10 +2,10 @@
 
 function MainContent() {
   return (
-    <div id="main" className="mainContainer justify-self-center">
+    <div id="main" className="mainContainer justify-self-center max-w-max">
       <div
         id="intro"
-        className="text-left bg-gray-800 bg-opacity-70 rounded-2xl p-2 mb-2 object-center"
+        className="text-left bg-gray-800 bg-opacity-70 rounded-2xl p-2 object-center"
       >
         <h3 className="text-xs">Hi my name is</h3>
         <h1 className="text-5xl">Kim Jensen</h1>
@@ -15,7 +15,7 @@ function MainContent() {
       </div>
       <div
         id="content"
-        className="text-left bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light max-w-xl"
+        className="text-left bg-gray-900 bg-opacity-80 rounded-2xl p-3 font-light mt-12"
       >
         <p>I'm a junior Front end developer, based in Norway.</p>
         <br />
@@ -25,6 +25,8 @@ function MainContent() {
         </p>
         <br />
         <p>Passionate about computer technology, hardware and software.</p>
+        {/* <br />
+        <p>Well versed in React, Javascript and html</p> */}
       </div>
     </div>
   );

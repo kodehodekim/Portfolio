@@ -21,11 +21,6 @@ export const project1 = [
       "Task during the Kodehode course. Fetching data from an API, then displaying the API data using Javascript.",
     git: "https://github.com/kodehodekim/ModulCRepo/tree/main/Javascript/Dev/Assignment3%20Pokedex",
     ghpages: "https://kodehodekim.github.io/Pokedex/",
-    // icons: IconReact,
-    // IconFigma,
-    // IconCss,
-    // IconVite,
-    // IconJs,
   },
 ];
 
@@ -35,8 +30,8 @@ export const project2 = [
     image: projectImage2,
     description:
       "Task done during the Kodehode coding course. Made in React, useEffect and useState is used to calculate the timer until christmas. Using localStorage for the guestbook.",
-    gitHub: "https://github.com/kodehodekim/ChristmasProject",
-    ghPages: "https://kodehodekim.github.io/ChristmasProject/",
+    git: "https://github.com/kodehodekim/ChristmasProject",
+    ghpages: "https://kodehodekim.github.io/ChristmasProject/",
   },
 ];
 

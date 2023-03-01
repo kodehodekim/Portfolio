@@ -9,36 +9,53 @@ import IconCss from "../assets/icons/css.png";
 
 function Footer() {
   return (
-    <>
-      {/* Footer icons need changed, as these are to large. */}
-      <footer
-        id="footer"
-        className="text-xs font-thin text-center max-w-xs items-center justify-self-center"
-      >
-        <div>
-          <div id="footerIcons" className="inline-flex opacity-30">
-            <a href="https://reactjs.org/">
-              <img src={IconReact} alt="React icon" />
-            </a>
-            <a href="https://www.javascript.com/">
-              <img src={IconJs} alt="Javascript icon" />
-            </a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-              <img src={IconHtml} alt="HTML5 icon" />
-            </a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-              <img src={IconCss} alt="CSS3 icon" />
-            </a>
-            <a href="https://www.figma.com/">
-              <img src={IconFigma} alt="Figma icon" />
-            </a>
-          </div>
-          <h4 id="footerText" className="opacity-40 text-xs">
-            NifsWeb development 2023
-          </h4>
+    <footer
+      id="footer"
+      className="text-xs font-thin text-center max-w-xs items-center justify-self-center"
+    >
+      <div>
+        <div id="footerIcons" className="hiddenMobile inline-flex opacity-30">
+          <a
+            href="https://reactjs.org/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={IconReact} alt="React icon" />
+          </a>
+          <a
+            href="https://www.javascript.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={IconJs} alt="Javascript icon" />
+          </a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={IconHtml} alt="HTML5 icon" />
+          </a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={IconCss} alt="CSS3 icon" />
+          </a>
+          <a
+            href="https://www.figma.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={IconFigma} alt="Figma icon" />
+          </a>
         </div>
-      </footer>
-    </>
+        <h4 id="footerText" className="hiddenMobile opacity-40 text-xs">
+          NifsWeb development 2023
+        </h4>
+      </div>
+    </footer>
   );
 }
 
